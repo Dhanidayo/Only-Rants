@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap");
 
 /* base styles */
 * {
@@ -13,21 +14,61 @@
   max-width: 600px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
+  cursor: pointer;
 }
 .navbar h1 {
   color: #f1356d;
+  font-family: "Licorice", cursive;
+  font-size: 2rem;
 }
 .navbar .links {
-  margin-left: auto;
+  margin-inline: auto;
 }
 .navbar a {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
 }
-.navbar a:hover {
+/* .navbar a:hover {
   color: #f1356d;
+} */
+
+.active {
+  border-bottom: 2px solid #f1356d;
 }
+
+/* STYLE FOR DARK MODE TOGGLE */
+
+.toggle-dark, .toggle-light {
+  display: flex;
+  padding: 3px;
+  border-radius: 4px;
+  right: 5px;
+  background-color: #ddd;
+}
+.toggle-dark {
+  background-color: rgb(50, 50, 50);
+}
+.toggle-light {
+  background-color: rgb(250, 250, 250);
+}
+.dark-mode, .light-mode {
+  margin: 3px;
+  padding: 3px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 15px;
+  text-align: center;
+}
+.dark-mode {
+  background-color: rgb(50, 50, 50);
+  color: rgb(250, 250, 250);
+}
+.light-mode {
+  background-color: #fff;
+  color: rgb(50, 50, 50);
+}
+
 .content {
   max-width: 600px;
   margin: 40px auto;
